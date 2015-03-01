@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/shCore.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/shThemeDefault.css"}}" />
 
     {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch" />{{/if}}
 
@@ -41,6 +43,11 @@
     {{ghost_foot}}
 
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
+    <script type="text/javascript" src="{{asset "js/shCore.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/shBrushBash.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/shBrushPython.js"}}"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
 </body>
 </html>
